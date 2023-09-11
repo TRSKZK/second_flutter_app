@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class StartWidget extends StatelessWidget {
-  const StartWidget({
+  const StartWidget(
+    this.switchScreen, {
     super.key,
   });
+
+  final void Function() switchScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,7 @@ class StartWidget extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          onPressed: () {},
+          onPressed: switchScreen,
           label: const Text(
             'Start Quiz',
           ),
