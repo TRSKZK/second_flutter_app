@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartWidget extends StatelessWidget {
   const StartWidget(
@@ -19,11 +20,13 @@ class StartWidget extends StatelessWidget {
           color: const Color.fromARGB(150, 222, 222, 232),
         ),
         const SizedBox(height: 40),
-        const Text(
-          'Learn Flutter the fun way',
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
-        ),
+        Text('Learn Flutter the fun way',
+            style: GoogleFonts.lato(
+                textStyle: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(100, 189, 129, 215),
+            ))),
         const SizedBox(height: 20),
         OutlinedButton.icon(
           style: OutlinedButton.styleFrom(
